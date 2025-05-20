@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Library</h1>
+  <button id="newBookBtn">New Book</button>
+
+  <dialog id="bookDialog">
+    <form id="bookForm">
+      <label>Title: <input type="text" name="title" required></label><br>
+      <label>Author: <input type="text" name="author" required></label><br>
+      <label>Pages: <input type="number" name="pages" required></label><br>
+      <label>Read: <input type="checkbox" name="read"></label><br>
+      <button type="submit">Add Book</button>
+      <button type="button" id="closeDialog">Cancel</button>
+    </form>
+  </dialog>
+
+  <div id="libraryDisplay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+
+#libraryDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.book-card {
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 200px;
+}
+
+button {
+  margin-top: 0.5rem;
+}
