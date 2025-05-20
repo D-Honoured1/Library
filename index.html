@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Library</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>My Library</h1>
+    <h1>D-Honoured1's Library</h1>
+  <!-- Button to open the book form modal -->
   <button id="newBookBtn">New Book</button>
 
+  <!-- Dialog for book form input -->
   <dialog id="bookDialog">
-    <form id="bookForm">
-      <label>Title: <input type="text" name="title" required></label><br>
-      <label>Author: <input type="text" name="author" required></label><br>
-      <label>Pages: <input type="number" name="pages" required></label><br>
-      <label>Read: <input type="checkbox" name="read"></label><br>
+    <form id="bookForm" method="dialog">
+      <label>Title: <input type="text" name="title" required /></label><br />
+      <label>Author: <input type="text" name="author" required /></label><br />
+      <label>Pages: <input type="number" name="pages" required /></label><br />
+      <label>Read: <input type="checkbox" name="read" /></label><br />
       <button type="submit">Add Book</button>
       <button type="button" id="closeDialog">Cancel</button>
     </form>
   </dialog>
 
+  <!-- Container for displaying book cards -->
   <div id="libraryDisplay"></div>
 
+  <!-- Link to JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
