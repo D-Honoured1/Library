@@ -3,30 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Library</title>
+  <title>D-Honoured1's Library</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>D-Honoured1's Library</h1>
-  <!-- Button to open the book form modal -->
+  <h1>D-Honoured1's Library</h1>
   <button id="newBookBtn">New Book</button>
+  <button id="viewStorageBtn">View Storage</button>
+  <button id="clearStorageBtn">Clear Storage</button>
 
-  <!-- Dialog for book form input -->
+  <!-- Dialog for adding/editing book -->
   <dialog id="bookDialog">
     <form id="bookForm" method="dialog">
-      <label>Title: <input type="text" name="title" required /></label><br />
-      <label>Author: <input type="text" name="author" required /></label><br />
-      <label>Pages: <input type="number" name="pages" required /></label><br />
-      <label>Read: <input type="checkbox" name="read" /></label><br />
-      <button type="submit">Add Book</button>
+      <input type="hidden" name="bookId" />
+      <label>Title: <input type="text" name="title" required /></label>
+      <label>Author: <input type="text" name="author" required /></label>
+      <label>Pages: <input type="number" name="pages" required /></label>
+      <label>Read: <input type="checkbox" name="read" /></label>
+      <button type="submit">Save Book</button>
       <button type="button" id="closeDialog">Cancel</button>
     </form>
   </dialog>
 
-  <!-- Container for displaying book cards -->
+  <!-- Dialog for viewing local storage -->
+  <dialog id="storageDialog">
+    <h3>Books in Local Storage</h3>
+    <pre id="storageContent"></pre>
+    <button id="closeStorageDialog">Close</button>
+  </dialog>
+
+  <!-- Display area -->
   <div id="libraryDisplay"></div>
 
-  <!-- Link to JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
